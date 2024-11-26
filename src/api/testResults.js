@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://your-json-server.vercel.app/testResults";
+const API_URL = "https://react-mbti-test.glitch.me";
 
 // 테스트 결과를 가져오는 함수
 export const getTestResults = async () => {
