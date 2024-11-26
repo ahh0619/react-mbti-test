@@ -6,6 +6,12 @@
 
 ---
 
+## 🎥 시연영상
+
+![스크린샷 2024-11-26 193450](https://github.com/user-attachments/assets/4dbbace7-85e0-4765-b2d3-3756037fddf8)
+
+---
+
 ## 🔗 배포
 - **[배포 링크](https://react-mbti-test-wine.vercel.app/)**
 - **[블로그포스팅 1](https://velog.io/@hhyun19/%EC%8B%AC%ED%99%94%EA%B3%BC%EC%A0%9C-MBTI-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0)**
