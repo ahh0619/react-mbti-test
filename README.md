@@ -8,7 +8,8 @@
 
 ## 🎥 시연영상
 
-![스크린샷 2024-11-26 193450](https://github.com/user-attachments/assets/4dbbace7-85e0-4765-b2d3-3756037fddf8)
+![ezgif-6-1f5a5a3daa](https://github.com/user-attachments/assets/819ab919-e704-4c0e-a9ba-fc6e3a8f6309)
+
 
 ---
 
