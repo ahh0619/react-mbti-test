@@ -38,7 +38,7 @@ const TestPage = () => {
     <>
       <Header />
       <div className="w-full flex flex-col items-center justify-center bg-white mt-16">
-        <div className="bg-white rounded-lg p-8 max-w-xl w-full shadow-lg mt-16">
+        <div className="bg-white rounded-lg p-8 max-w-xl w-full shadow-lg">
           {!result ? (
             <>
               <h1 className="flex justify-center text-3xl font-bold text-primary-color mb-6">
