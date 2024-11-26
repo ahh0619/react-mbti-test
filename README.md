@@ -7,10 +7,8 @@
 ---
 
 ## 🎥 시연영상
-<div style="display:flex; justify-content: center;"> 
-![ezgif-6-1f5a5a3daa](https://github.com/user-attachments/assets/819ab919-e704-4c0e-a9ba-fc6e3a8f6309)
-</div>
 
+![ezgif-6-1f5a5a3daa](https://github.com/user-attachments/assets/819ab919-e704-4c0e-a9ba-fc6e3a8f6309)
 
 ---
 
