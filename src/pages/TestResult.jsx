@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import { getTestResults } from "../api/testResults";
 
 const TestResult = () => {
-  const currentUser = JSON.parse(localStorage.getItem("user")).nickname; // 현재 로그인한 사용자
+  const currentUserId = JSON.parse(localStorage.getItem("user")).userId; // 현재 로그인한 사용자
   const [testResults, setTestResults] = useState([]);
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const TestResult = () => {
         </h1>
         <TestResultList
           testResults={testResults}
-          currentUser={currentUser}
+          currentUserId={currentUserId}
           setTestResults={setTestResults}
         />
       </div>

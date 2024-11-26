@@ -16,6 +16,7 @@ const TestPage = () => {
 
     try {
       const resultPayload = {
+        userid: user.userId,
         username: user.nickname,
         mbti: mbtiResult,
         description: mbtiDescriptions[mbtiResult],

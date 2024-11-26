@@ -3,8 +3,9 @@ import {
   deleteTestResult,
 } from "../api/testResults";
 
-const TestResultItem = ({ result, currentUser, onUpdate }) => {
-  const { id, username, mbti, description, createdAt, visibility } = result;
+const TestResultItem = ({ result, currentUserId, onUpdate }) => {
+  const { id, userid, username, mbti, description, createdAt, visibility } =
+    result;
 
   const handleToggleVisibility = async () => {
     try {
@@ -34,7 +35,7 @@ const TestResultItem = ({ result, currentUser, onUpdate }) => {
       </div>
       <h3 className="text-2xl font-semibold mb-2">{mbti}</h3>
       <p className="text-gray-300">{description}</p>
-      {currentUser === username && (
+      {currentUserId === userid && (
         <div className="flex justify-end space-x-4 mt-4">
           <button
             onClick={handleToggleVisibility}

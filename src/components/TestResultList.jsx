@@ -1,6 +1,6 @@
 import TestResultItem from "./TestResultItem";
 
-const TestResultList = ({ testResults, currentUser, setTestResults }) => {
+const TestResultList = ({ testResults, currentUserId, setTestResults }) => {
   const handleUpdate = (id, updatedResult) => {
     if (updatedResult === null) {
       // 삭제된 결과 제거
@@ -19,13 +19,13 @@ const TestResultList = ({ testResults, currentUser, setTestResults }) => {
     <div className="flex flex-col space-y-6 w-full max-w-3xl">
       {testResults
         .filter(
-          (result) => result.visibility || result.username === currentUser
+          (result) => result.visibility || result.userid === currentUserId
         ) // 공개된 결과 + 본인 결과만 표시
         .map((result) => (
           <TestResultItem
             key={result.id}
             result={result}
-            currentUser={currentUser}
+            currentUserId={currentUserId}
             onUpdate={handleUpdate}
           />
         ))}
