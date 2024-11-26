@@ -33,7 +33,7 @@ const TestResultItem = ({ result, currentUserId, onUpdate }) => {
           {new Date(createdAt).toLocaleString()}
         </p>
       </div>
-      <h3 className="text-2xl font-semibold mb-2">{mbti}</h3>
+      <h3 className="text-2xl font-semibold mb-2 text-yellow-500">{mbti}</h3>
       <p className="text-gray-300">{description}</p>
       {currentUserId === userid && (
         <div className="flex justify-end space-x-4 mt-4">
