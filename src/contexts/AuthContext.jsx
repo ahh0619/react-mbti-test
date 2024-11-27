@@ -7,6 +7,7 @@ const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true); // 로딩 상태 추가
 
   // 로그인 함수
   const login = async (userid, password) => {
@@ -40,10 +41,11 @@ export const AuthProvider = ({ children }) => {
       setIsLoggedIn(true);
       setUser(storedUser);
     }
+    setLoading(false); // 초기화 완료
   }, []);
 
   return (
-    <AuthContext.Provider value={{ isLoggedIn, user, login, logout }}>
+    <AuthContext.Provider value={{ isLoggedIn, user, login, logout, loading }}>
       {children}
     </AuthContext.Provider>
   );
