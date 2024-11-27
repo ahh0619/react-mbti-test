@@ -1,5 +1,4 @@
 import { useNavigate, Link } from "react-router-dom";
-import Header from "../components/Header";
 import AuthForm from "../components/AuthForm";
 import { register } from "../api/auth"; // 회원가입 API
 import { toast } from "react-toastify";
@@ -20,7 +19,6 @@ const Signup = () => {
 
   return (
     <>
-      <Header />
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
         <div className="bg-white shadow-lg rounded-lg p-8 w-96">
           <h1 className="text-2xl font-bold text-gray-800 text-center mb-6">

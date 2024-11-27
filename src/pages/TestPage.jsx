@@ -3,10 +3,10 @@ import TestForm from "../components/TestForm";
 import { calculateMBTI, mbtiDescriptions } from "../utils/mbtiCalculator";
 import { createTestResult } from "../api/testResults";
 import { useNavigate } from "react-router-dom";
-import Header from "../components/Header";
+import { useAuth } from "../contexts/AuthContext";
 
 const TestPage = () => {
-  const user = JSON.parse(localStorage.getItem("user"));
+  const { user } = useAuth();
   const navigate = useNavigate();
   const [result, setResult] = useState(null);
 
@@ -36,7 +36,6 @@ const TestPage = () => {
 
   return (
     <>
-      <Header />
       <div className="w-full flex flex-col items-center justify-center bg-white mt-16">
         <div className="bg-white rounded-lg p-8 max-w-xl w-full shadow-lg">
           {!result ? (

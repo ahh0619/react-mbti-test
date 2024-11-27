@@ -1,6 +1,9 @@
+import { useAuth } from "../contexts/AuthContext";
 import TestResultItem from "./TestResultItem";
 
-const TestResultList = ({ testResults, currentUserId, setTestResults }) => {
+const TestResultList = ({ testResults, setTestResults }) => {
+  const { user } = useAuth();
+  const currentUserId = user.userId;
   const handleUpdate = (id, updatedResult) => {
     if (updatedResult === null) {
       // 삭제된 결과 제거

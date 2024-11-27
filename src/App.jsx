@@ -1,10 +1,11 @@
 import AppRouter from "./Router";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { AuthProvider } from "./contexts/AuthContext";
 
 function App() {
   return (
-    <>
+    <AuthProvider>
       <AppRouter />
       <ToastContainer
         position="top-center" // 알림을 화면 상단 중앙에 위치
@@ -17,7 +18,7 @@ function App() {
         draggable // 드래그 가능
         pauseOnHover // 호버 시 일시정지
       />
-    </>
+    </AuthProvider>
   );
 }
 

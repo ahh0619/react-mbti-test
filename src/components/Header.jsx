@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 import LoggedInNav from "./LoggedInNav";
 import LoggedOutNav from "./LoggedOutNav";
+import { useAuth } from "../contexts/AuthContext";
 
 const Header = () => {
-  // 로컬 스토리지에서 사용자 정보 확인
-  const user = JSON.parse(localStorage.getItem("user"));
-  const isLoggedIn = !!user; // user 데이터
+  const { isLoggedIn } = useAuth();
 
   return (
     <header className="bg-gray-100 shadow-md fixed top-0 left-0 w-full z-50">

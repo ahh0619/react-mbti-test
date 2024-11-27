@@ -1,10 +1,8 @@
-import Header from "../components/Header";
 import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <>
-      <Header />
       <div className="bg-gray-50 min-h-screen mt-16">
         <div className="container mx-auto py-10 px-6">
           <h1 className="text-4xl font-bold text-center text-gray-800 mb-6">

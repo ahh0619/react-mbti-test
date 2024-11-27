@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Header from "../components/Header";
 import { toast } from "react-toastify";
 import { getProfile, updateProfile } from "../api/auth";
 
@@ -53,7 +52,6 @@ const Profile = () => {
 
   return (
     <>
-      <Header />
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
         <div className="bg-white shadow-lg rounded-lg p-8 w-96">
           <h2 className="text-2xl font-bold text-gray-800 text-center mb-6">
