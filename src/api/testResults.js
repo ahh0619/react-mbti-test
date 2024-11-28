@@ -1,6 +1,6 @@
 import axios from "axios";
-
-const API_URL = "https://succinct-ajar-eoraptor.glitch.me/testResults";
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+const API_URL = `${BASE_URL}/testResults`;
 
 // 테스트 결과를 가져오는 함수
 export const getTestResults = async () => {
